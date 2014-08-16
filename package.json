@@ -1,0 +1,24 @@
+{
+  "name": "sourcejs-jade",
+  "version": "0.0.0",
+  "description": "Jade support for SourceJS",
+  "main": "index.js",
+  "dependencies": {
+    "jade": "^1.5.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sourcejs/sourcejs-jade.git"
+  },
+  "keywords": [
+    "sourcejs",
+    "jade"
+  ],
+  "author": "Alexey Ostrovsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sourcejs/sourcejs-jade/issues"
+  },
+  "homepage": "https://github.com/sourcejs/sourcejs-jade"
+}
