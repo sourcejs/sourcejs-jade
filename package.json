@@ -1,6 +1,6 @@
 {
   "name": "sourcejs-jade",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Jade support for SourceJS",
   "main": "index.js",
   "dependencies": {

@@ -1,4 +1,5 @@
 var jade = require('jade');
+var path = require('path');
 
 /*
  * Get html from response and parse jade markup
@@ -13,7 +14,10 @@ exports.process = function (req, res, next) {
             var html = req.specData.renderedHtml;
 
             /* render jade markup */
-            html = jade.render(html);
+            html = jade.render(html, {
+                pretty: true,
+                filename: path.join(global.app.get('user'), req.path)
+            });
 
             req.specData.renderedHtml = html;
         }
