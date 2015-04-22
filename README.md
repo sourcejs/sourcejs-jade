@@ -1,4 +1,4 @@
-Jase support for SourceJS
+Jade support for SourceJS
 ===============
 
 [SourceJS](http://sourcejs.com) middleware to support [Jade](http://jade-lang.com/) markup language (`*.jade`) instead of native `*.src`.
