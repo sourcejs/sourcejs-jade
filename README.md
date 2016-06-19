@@ -3,6 +3,8 @@ Jade support for SourceJS
 
 [SourceJS](http://sourcejs.com) middleware to support [Jade](http://jade-lang.com/) markup language (`*.jade`) instead of native `*.src`.
 
+Works with SourceJS v.0.5.6+.
+
 ## Install
 
 To install, run npm in `sourcejs/user` folder:
@@ -29,3 +31,7 @@ h1 Jade - node template engine
         strong focus on performance
         and powerful features.
 ```
+
+## Examples
+
+Jade Spec page example - https://sourcejs.com/specs/example-specs-showcase/jade ([source](https://github.com/sourcejs/example-specs-showcase/blob/master/jade/index.jade)).

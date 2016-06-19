@@ -1,5 +1,6 @@
 var jade = require('jade');
 var path = require('path');
+var specUtils = require(path.join(global.pathToApp,'core/lib/specUtils'));
 
 /*
  * Get html from response and parse jade markup
@@ -12,11 +13,14 @@ exports.process = function (req, res, next) {
     if (req.specData && req.specData.renderedHtml) {
         if (req.specData.isJade) {
             var html = req.specData.renderedHtml;
+            var specDir = specUtils.getFullPathToSpec(req.path);
+            var specFilePath = specUtils.getSpecFromDir(specDir);
 
             /* render jade markup */
             html = jade.render(html, {
                 pretty: true,
-                filename: path.join(global.app.get('user'), req.path)
+                basedir: global.app.get('user'),
+                filename: specFilePath
             });
 
             req.specData.renderedHtml = html;
