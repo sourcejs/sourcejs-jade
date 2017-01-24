@@ -11,7 +11,7 @@ var specUtils = require(path.join(global.pathToApp,'core/lib/specUtils'));
  * */
 exports.process = function (req, res, next) {
     if (req.specData && req.specData.renderedHtml) {
-        if (req.specData.isJade) {
+        if (req.specData.isJade || req.specData.isPug) {
             var html = req.specData.renderedHtml;
             var specDir = specUtils.getFullPathToSpec(req.path);
             var specFilePath = specUtils.getSpecFromDir(specDir);
