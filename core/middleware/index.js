@@ -1,4 +1,4 @@
-var jade = require('jade');
+var pug  = require('pug');
 var path = require('path');
 var specUtils = require(path.join(global.pathToApp,'core/lib/specUtils'));
 
@@ -17,7 +17,7 @@ exports.process = function (req, res, next) {
             var specFilePath = specUtils.getSpecFromDir(specDir);
 
             /* render jade markup */
-            html = jade.render(html, {
+            html = pug.render(html, {
                 pretty: true,
                 basedir: global.app.get('user'),
                 filename: specFilePath

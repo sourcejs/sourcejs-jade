@@ -1,10 +1,10 @@
 {
   "name": "sourcejs-jade",
   "version": "0.1.0",
-  "description": "Jade support for SourceJS",
+  "description": "Jade/Pug support for SourceJS",
   "main": "index.js",
   "dependencies": {
-    "jade": "^1.11.0"
+    "pug": "^2.0.3"
   },
   "devDependencies": {},
   "repository": {
@@ -13,7 +13,8 @@
   },
   "keywords": [
     "sourcejs",
-    "jade"
+    "jade",
+    "pug"
   ],
   "author": "Robert Haritonov <r@rhr.me>",
   "license": "MIT",
